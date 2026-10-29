@@ -1,0 +1,8 @@
+step	n
+PASS variants	13757
+in a gene	6745
+coding / splice site	118
+HIGH/MODERATE impact	58
+rare (gnomAD AF < 0.01)	9
+not ClinVar benign	8
+prioritized (incl. any ClinVar P/LP)	8

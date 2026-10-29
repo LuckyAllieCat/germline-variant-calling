@@ -1,0 +1,17 @@
+# Downloaded data and heavy intermediates are never committed
+data/
+logs/
+.snakemake/
+results/*
+!results/tables/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.bam
+*.bai
+*.cram
+*.fastq.gz
+*.vcf.gz
+*.tbi
+.idea/
+.vscode/

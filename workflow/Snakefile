@@ -1,0 +1,42 @@
+# Germline variant calling + benchmarking + annotation for GIAB HG002.
+# One command runs everything:  snakemake --cores 8
+from pathlib import Path
+
+configfile: "config/config.yaml"
+
+SAMPLE = config["sample"]
+CHROM = config["region"]["chrom"]
+START = int(config["region"]["start"])
+END = int(config["region"]["end"])
+REGION = f"{CHROM}:{START}-{END}"
+CALLERS = ["gatk", "bcftools"]
+MODES = ["pass", "all"]  # benchmark filtered (PASS only) and unfiltered calls
+THREADS = int(config["threads"])
+
+# Split the region into equal chunks so both callers can run in parallel
+N_CHUNKS = int(config.get("scatter", 4))
+_step = -(-(END - START + 1) // N_CHUNKS)
+CHUNKS = {
+    f"{i:02d}": f"{CHROM}:{START + i * _step}-{min(END, START + (i + 1) * _step - 1)}"
+    for i in range(N_CHUNKS)
+}
+
+REF = f"data/ref/{CHROM}.fa"
+
+include: "rules/download.smk"
+include: "rules/qc_align.smk"
+include: "rules/call.smk"
+include: "rules/benchmark.smk"
+include: "rules/annotate.smk"
+
+
+rule all:
+    input:
+        "results/qc/multiqc_report.html",
+        "results/tables/benchmark_summary.tsv",
+        "results/tables/error_profile.tsv",
+        "results/tables/prioritized_variants.tsv",
+        "results/tables/run_summary.md",
+        "figures/benchmark_comparison.png",
+        "figures/error_profile.png",
+        "figures/prioritization_summary.png",

@@ -1,0 +1,8 @@
+# Tiny test region for CI (350 kb around HNF4A and ADA). Loaded on top of
+# config.yaml, so only the settings that differ are listed.
+region:
+  chrom: chr20
+  start: 44350001
+  end: 44700000
+threads: 2
+scatter: 2

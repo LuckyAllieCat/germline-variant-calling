@@ -1,0 +1,9 @@
+tier	gene	CHROM	POS	REF	ALT	GT	DP	QUAL	worst_consequence	impact	consequence	protein_change	transcript	mane_select	clinvar_significance	clinvar_stars	clinvar_condition	CLINVAR_ID	gnomADe_AF	gnomADg_AF	gnomADe_AF_grpmax	gnomADg_AF_grpmax	gnomAD_max_AF	GIAB_status	difficult_region	caller
+3: rare, not in ClinVar	SEMG1	chr20	45208280	A	T	0/1	12	46.64	missense	MODERATE	missense	328K>328I	ENST00000372781	True	not_in_ClinVar		.	.					0	outside benchmark	repeat	gatk
+3: rare, not in ClinVar	SEMG1	chr20	45208281	A	C	0/1	12	46.64	missense	MODERATE	missense	328K>328N	ENST00000372781	True	not_in_ClinVar		.	.					0	outside benchmark	repeat	gatk
+3: rare, not in ClinVar	SEMG1	chr20	45208286	T	C	0/1	13	43.64	missense	MODERATE	missense	330I>330T	ENST00000372781	True	not_in_ClinVar		.	.					0	outside benchmark	repeat	gatk
+3: rare, not in ClinVar	SEMG1	chr20	45208288	A	C	0/1	13	43.64	missense	MODERATE	missense	331T>331P	ENST00000372781	True	not_in_ClinVar		.	.					0	outside benchmark	repeat	gatk
+3: rare, not in ClinVar	SEMG1	chr20	45208263	ACAG	A	0/1	17	211.6	inframe_deletion	MODERATE	inframe_deletion	322AQ>322A	ENST00000372781	True	not_in_ClinVar		.	.	0	6.6e-06		2.42e-05	2.42e-05	outside benchmark	repeat	gatk
+3: rare, not in ClinVar	SEMG1	chr20	45208292	T	A	0/1	13	43.64	missense	MODERATE	missense	332I>332N	ENST00000372781	True	not_in_ClinVar		.	.	0	2.04e-05		3.99e-05	3.99e-05	outside benchmark	repeat	gatk
+3: rare, not in ClinVar	SEMG1	chr20	45208254	AGAG	A	0/1	18	278.6	inframe_deletion	MODERATE	inframe_deletion	319EE>319E	ENST00000372781	True	not_in_ClinVar		.	.	6.86e-07	1.32e-05	2.24e-05	6.58e-05	6.58e-05	outside benchmark	repeat	gatk
+3: rare, not in ClinVar	SEMG1	chr20	45208259	A	AGCTAGT	0/1	17	256.6	inframe_insertion	MODERATE	inframe_insertion	321K>321KLV	ENST00000372781	True	not_in_ClinVar		.	.	6.86e-07	1.36e-05	2.25e-05	6.76e-05	6.76e-05	outside benchmark	repeat	gatk

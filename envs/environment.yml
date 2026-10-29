@@ -1,0 +1,22 @@
+# Single pinned environment for the whole pipeline (Snakemake + all tools).
+name: germline-vc
+channels:
+  - conda-forge
+  - bioconda
+channel_priority: strict
+dependencies:
+  - python=3.12
+  - snakemake-minimal=8.30.0
+  - samtools=1.21
+  - bcftools=1.21
+  - htslib=1.21
+  - bwa-mem2=2.2.1
+  - fastp=0.24.0
+  - multiqc=1.25.2
+  - mosdepth=0.3.10
+  - gatk4=4.6.1.0
+  - rtg-tools=3.12.1
+  - pandas=2.2.3
+  - matplotlib-base=3.9.2
+  - pyyaml=6.0.2
+  - pytest=8.3.4

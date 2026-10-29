@@ -1,0 +1,57 @@
+caller	stratum	level	variant_class	truth_n	recall	FN	FP
+bcftools	all	all	SNV	10503	0.9901	104	25
+bcftools	all	all	INDEL	1819	0.8461	280	164
+bcftools	depth	<10	SNV	24	0.3750	15	0
+bcftools	depth	<10	INDEL	11	0.3636	7	0
+bcftools	depth	10-19	SNV	733	0.9604	29	5
+bcftools	depth	10-19	INDEL	250	0.6200	95	44
+bcftools	depth	20-29	SNV	5180	0.9931	36	11
+bcftools	depth	20-29	INDEL	896	0.8471	137	90
+bcftools	depth	30-39	SNV	4088	0.9949	21	7
+bcftools	depth	30-39	INDEL	592	0.9307	41	30
+bcftools	depth	40+	SNV	478	0.9937	3	2
+bcftools	depth	40+	INDEL	70	1.0000	0	0
+bcftools	indel_size	del 1	INDEL	505	0.8000	101	43
+bcftools	indel_size	del 2-5	INDEL	324	0.8580	46	39
+bcftools	indel_size	del 6-15	INDEL	106	0.8868	12	11
+bcftools	indel_size	del >15	INDEL	19	0.8421	3	2
+bcftools	indel_size	ins 1	INDEL	419	0.8663	56	27
+bcftools	indel_size	ins 2-5	INDEL	337	0.8635	46	31
+bcftools	indel_size	ins 6-15	INDEL	78	0.8718	10	6
+bcftools	indel_size	ins >15	INDEL	31	0.8065	6	5
+bcftools	tandem_repeat_or_homopolymer	False	SNV	9863	0.9955	44	18
+bcftools	tandem_repeat_or_homopolymer	False	INDEL	578	0.9758	14	5
+bcftools	tandem_repeat_or_homopolymer	True	SNV	640	0.9062	60	7
+bcftools	tandem_repeat_or_homopolymer	True	INDEL	1241	0.7857	266	159
+bcftools	low_mappability	False	SNV	10170	0.9921	80	12
+bcftools	low_mappability	False	INDEL	1798	0.8471	275	163
+bcftools	low_mappability	True	SNV	333	0.9279	24	13
+bcftools	low_mappability	True	INDEL	21	0.7619	5	1
+gatk	all	all	SNV	10503	0.9913	91	28
+gatk	all	all	INDEL	1819	0.9329	122	40
+gatk	depth	<10	SNV	24	0.4167	14	0
+gatk	depth	<10	INDEL	11	0.2727	8	1
+gatk	depth	10-19	SNV	733	0.9400	44	16
+gatk	depth	10-19	INDEL	250	0.7360	66	20
+gatk	depth	20-29	SNV	5180	0.9952	25	2
+gatk	depth	20-29	INDEL	896	0.9542	41	17
+gatk	depth	30-39	SNV	4088	0.9980	8	9
+gatk	depth	30-39	INDEL	592	0.9882	7	2
+gatk	depth	40+	SNV	478	1.0000	0	1
+gatk	depth	40+	INDEL	70	1.0000	0	0
+gatk	indel_size	del 1	INDEL	505	0.9426	29	8
+gatk	indel_size	del 2-5	INDEL	324	0.9290	23	4
+gatk	indel_size	del 6-15	INDEL	106	0.9245	8	8
+gatk	indel_size	del >15	INDEL	19	1.0000	0	0
+gatk	indel_size	ins 1	INDEL	419	0.9451	23	9
+gatk	indel_size	ins 2-5	INDEL	337	0.8991	34	9
+gatk	indel_size	ins 6-15	INDEL	78	0.9487	4	2
+gatk	indel_size	ins >15	INDEL	31	0.9677	1	0
+gatk	tandem_repeat_or_homopolymer	False	SNV	9863	0.9923	76	26
+gatk	tandem_repeat_or_homopolymer	False	INDEL	578	0.9983	1	2
+gatk	tandem_repeat_or_homopolymer	True	SNV	640	0.9766	15	2
+gatk	tandem_repeat_or_homopolymer	True	INDEL	1241	0.9025	121	38
+gatk	low_mappability	False	SNV	10170	0.9940	61	12
+gatk	low_mappability	False	INDEL	1798	0.9321	122	40
+gatk	low_mappability	True	SNV	333	0.9099	30	16
+gatk	low_mappability	True	INDEL	21	1.0000	0	0

@@ -1,0 +1,119 @@
+gene	CHROM	POS	REF	ALT	GT	DP	QUAL	worst_consequence	impact	consequence	protein_change	transcript	mane_select	clinvar_significance	clinvar_stars	CLNDN	CLINVAR_ID	gnomADe_AF	gnomADg_AF	gnomADe_AF_grpmax	gnomADg_AF_grpmax	gnomAD_max_AF	GIAB_status	difficult_region	caller
+PLCG1	chr20	41163423	A	G	0/1	29	462.64	missense	MODERATE	missense	279S>279G	ENST00000685551	True	not_in_ClinVar		.	.	0.156	0.141	0.17	0.17	0.17	TP	no	gatk
+PLCG1	chr20	41168825	T	C	1/1	27	1085.06	missense	MODERATE	missense	813I>813T	ENST00000685551	True	not_in_ClinVar		.	.	0.574	0.67	0.933	0.921	0.933	TP	no	gatk
+ZHX3	chr20	41185089	G	A	0/1	27	393.64	missense	MODERATE	3_prime_utr		ENST00000683867	True	Benign	2	not_provided	1266725	0.156	0.139	0.17	0.169	0.17	TP	no	gatk
+ZHX3	chr20	41203988	T	C	0/1	36	338.64	missense	MODERATE	missense	310N>310S	ENST00000683867	True	Benign	2	not_provided	1234898	0.177	0.136	0.199	0.199	0.199	TP	no	gatk
+ZHX3	chr20	41269493	C	T	1/1	40	1420.06	splice_region	LOW	splice_region		ENST00000419740	False	not_in_ClinVar		.	.					0	TP	no	gatk
+LPIN3	chr20	41345984	C	T	0/1	28	424.64	missense	MODERATE	missense	61R>61W	ENST00000373257	True	not_in_ClinVar		.	.	0.0221	0.0294	0.0496	0.0464	0.0496	TP	no	gatk
+CHD6	chr20	41455812	G	A	0/1	40	393.64	synonymous	LOW	synonymous	999S	ENST00000373233	True	Likely_benign	1	not_provided	2652335	0.000762	0.000617	0.00453	0.00271	0.00453	TP	no	gatk
+PTPRT	chr20	42677960	A	G	1/1	29	1044.06	synonymous	LOW	synonymous	353D	ENST00000373187	True	Benign	2	not_provided|PTPRT-related_disorder	1226281	0.363	0.392	0.464	0.454	0.464	TP	no	gatk
+PTPRT	chr20	43189649	C	G	1/1	34	1159.06	missense	MODERATE	missense	29A>29P	ENST00000373187	True	Benign	0	PTPRT-related_disorder	3059128	0.833	0.707	0.915	0.907	0.915	TP	no	gatk
+SRSF6	chr20	43460871	T	C	1/1	27	904.06	synonymous	LOW	synonymous	281P	ENST00000244020	True	not_in_ClinVar		.	.					0	TP	no	gatk
+L3MBTL1	chr20	43536082	T	C	1/1	32	1134.06	splice_region	LOW	splice_region		ENST00000373134	False	not_in_ClinVar		.	.					0	TP	no	gatk
+SGK2	chr20	43571064	GGTGT	G	1/1	11	481.02	splice_region	LOW	splice_region		ENST00000373100	True	Benign	2	not_provided|not_specified	769470	0.443	0.581	0.458	0.671	0.671	TP	repeat	gatk
+IFT52	chr20	43596474	G	A	1/1	44	1571.06	synonymous	LOW	synonymous	53V	ENST00000373030	True	Benign	2	not_specified|not_provided|Short-rib_thoracic_dysplasia_16_with_or_without_polydactyly	1183241	0.791	0.752	0.798	0.799	0.799	TP	no	gatk
+MYBL2	chr20	43699999	T	C	1/1	32	1226.06	synonymous	LOW	synonymous	302P	ENST00000217026	True	Benign	1	not_specified	4945053	0.92	0.931	0.974	0.973	0.974	TP	no	gatk
+TOX2	chr20	44051315	A	G	1/1	18	666.06	missense	MODERATE	missense	141M>141V	ENST00000341197	True	Likely_benign	2	not_provided	769471	0.00612	0.00574	0.034	0.00703	0.034	TP	no	gatk
+JPH2	chr20	44186550	G	A	1/1	23	789.06	synonymous	LOW	synonymous	52Y	ENST00000372980	True	Benign	2	Cardiomyopathy,_dilated,_2E|Cardiovascular_phenotype|not_specified|not_provided|Hypertrophic_cardiomyopathy_17|Hypertrophic_cardiomyopathy	137602	0.833	0.863	0.936	0.936	0.936	TP	no	gatk
+R3HDML	chr20	44337201	T	G	0/1	40	679.64	missense	MODERATE	missense	15F>15C	ENST00000217043	True	not_in_ClinVar		.	.	0.125	0.1	0.143	0.137	0.143	TP	no	gatk
+R3HDML	chr20	44337223	C	T	0/1	38	484.64	synonymous	LOW	synonymous	22N	ENST00000217043	True	not_in_ClinVar		.	.					0	TP	no	gatk
+R3HDML	chr20	44337385	T	C	1/1	26	1031.06	synonymous	LOW	synonymous	76S	ENST00000217043	True	not_in_ClinVar		.	.					0	TP	no	gatk
+R3HDML	chr20	44345295	T	C	0/1	30	537.64	synonymous	LOW	synonymous	182C	ENST00000217043	True	not_in_ClinVar		.	.					0	TP	no	gatk
+HNF4A	chr20	44406053	C	T	1/1	34	1141.06	splice_region	LOW	splice_region		ENST00000316673	True	Benign/Likely_benign	2	not_specified|Glycosuria|Maturity-onset_diabetes_of_the_young|not_provided	129239	0.224	0.182	0.238	0.23	0.238	TP	no	gatk
+ADA	chr20	44624274	T	C	0/1	37	313.64	synonymous	LOW	synonymous	178V	ENST00000372874	True	Benign/Likely_benign	2	not_specified|not_provided|Severe_combined_immunodeficiency,_autosomal_recessive,_T_cell-negative,_B_cell-negative,_NK_cell-negative,_due_to_adenosine_deaminase_deficiency	254716	0.182	0.242	0.425	0.414	0.425	TP	no	gatk
+ADA	chr20	44625657	C	T	0/1	33	468.64	synonymous	LOW	synonymous	130V	ENST00000372874	True	Benign	2	not_specified|not_provided|Severe_combined_immunodeficiency_disease|Severe_combined_immunodeficiency,_autosomal_recessive,_T_cell-negative,_B_cell-negative,_NK_cell-negative,_due_to_adenosine_deaminase_deficiency	35653	0.0337	0.0398	0.0593	0.0582	0.0593	TP	no	gatk
+ADA	chr20	44636062	T	C	1/1	40	1309.06	missense&NMD_transcript	MODERATE	missense&NMD_transcript	47Q>47R	ENST00000696075	False	Benign	2	Severe_combined_immunodeficiency,_autosomal_recessive,_T_cell-negative,_B_cell-negative,_NK_cell-negative,_due_to_adenosine_deaminase_deficiency|not_provided	1188894	0.891	0.902	0.999	0.998	0.999	TP	no	gatk
+ADA	chr20	44636286	C	T	1/1	31	1101.06	stop_gained&NMD_transcript	HIGH	splice_region		ENST00000372874	True	Benign/Likely_benign	2	not_specified|not_provided|Severe_combined_immunodeficiency,_autosomal_recessive,_T_cell-negative,_B_cell-negative,_NK_cell-negative,_due_to_adenosine_deaminase_deficiency	402340	0.998	0.986	1	1	1	TP	no	gatk
+CCN5	chr20	44720094	C	A	0/1	26	293.64	synonymous	LOW	synonymous	86G	ENST00000190983	True	not_in_ClinVar		.	.					0	TP	no	gatk
+KCNK15	chr20	44746198	GC	G	0/1	31	423.6	splice_region	LOW	splice_region		ENST00000372861	True	not_in_ClinVar		.	.					0	TP	no	gatk
+KCNK15	chr20	44750129	A	G	1/1	33	1265.06	missense	MODERATE	splice_region		ENST00000372861	True	not_in_ClinVar		.	.	0.502	0.578	0.758	0.749	0.758	TP	no	gatk
+KCNK15	chr20	44750623	A	C	1/1	23	901.06	missense	MODERATE	missense	260T>260P	ENST00000372861	True	not_in_ClinVar		.	.	0.503	0.58	0.757	0.749	0.757	TP	repeat	gatk
+KCNK15	chr20	44750627	C	A	0/1	23	217.64	missense	MODERATE	missense	261P>261H	ENST00000372861	True	not_in_ClinVar		.	.	0.0784	0.0834	0.198	0.191	0.198	TP	repeat	gatk
+KCNK15	chr20	44750813	T	C	1/1	18	636.06	missense	MODERATE	missense	323L>323P	ENST00000372861	True	not_in_ClinVar		.	.	0.505	0.576	0.737	0.722	0.737	TP	no	gatk
+PABPC1L	chr20	44931841	G	A	1/1	34	1138.06	missense&NMD_transcript	MODERATE	missense&NMD_transcript	55M>55I	ENST00000674244	False	not_in_ClinVar		.	.	0.319	0.402	1	0.559	1	TP	no	gatk
+PABPC1L	chr20	44936918	G	C	1/1	41	1333.06	missense	MODERATE	missense	52R>52P	ENST00000372822	False	not_in_ClinVar		.	.	0.0883	0.105	0.153	0.152	0.153	TP	no	gatk
+PABPC1L	chr20	44938146	A	G	1/1	26	861.06	missense	MODERATE	synonymous	582S	ENST00000217073	True	not_in_ClinVar		.	.	0.383	0.446	0.621	0.623	0.623	TP	no	gatk
+TOMM34	chr20	44943576	T	C	0/1	27	401.64	synonymous	LOW	synonymous	234A	ENST00000372813	True	not_in_ClinVar		.	.					0	TP	no	gatk
+STK4	chr20	44973280	G	T	1/1	46	1585.06	splice_region&NMD_transcript	LOW	splice_region&NMD_transcript		ENST00000698218	False	Benign	1	not_specified	2688413		0.528		0.679	0.679	TP	no	gatk
+STK4	chr20	45000494	G	A	1/1	27	814.06	missense	MODERATE	missense	312V>312M	ENST00000372806	True	Benign/Likely_benign	2	Combined_immunodeficiency_due_to_STK4_deficiency|not_provided|not_specified	1169470	0.284	0.251	0.348	0.307	0.348	TP	no	gatk
+KCNS1	chr20	45094986	T	C	0/1	31	200.64	missense	MODERATE	missense	489I>489V	ENST00000537075	True	not_in_ClinVar		.	.	0.437	0.47	0.558	0.564	0.564	TP	no	gatk
+KCNS1	chr20	45098514	C	T	0/1	31	262.64	synonymous	LOW	synonymous	86E	ENST00000537075	True	not_in_ClinVar		.	.					0	TP	no	gatk
+PI3	chr20	45174965	G	A	0/1	30	331.64	missense	MODERATE	missense	15A>15T	ENST00000243924	True	not_in_ClinVar		.	.	0.0342	0.0285	0.038	0.0418	0.0418	TP	no	gatk
+SEMG1	chr20	45208231	A	C	0/1	22	318.64	missense	MODERATE	missense	312S>312R	ENST00000372781	True	not_in_ClinVar		.	.	0.00173	0.0106	0.0065	0.0155	0.0155	outside benchmark	repeat	gatk
+SEMG1	chr20	45208254	AGAG	A	0/1	18	278.6	inframe_deletion	MODERATE	inframe_deletion	319EE>319E	ENST00000372781	True	not_in_ClinVar		.	.	6.86e-07	1.32e-05	2.24e-05	6.58e-05	6.58e-05	outside benchmark	repeat	gatk
+SEMG1	chr20	45208259	A	AGCTAGT	0/1	17	256.6	inframe_insertion	MODERATE	inframe_insertion	321K>321KLV	ENST00000372781	True	not_in_ClinVar		.	.	6.86e-07	1.36e-05	2.25e-05	6.76e-05	6.76e-05	outside benchmark	repeat	gatk
+SEMG1	chr20	45208263	ACAG	A	0/1	17	211.6	inframe_deletion	MODERATE	inframe_deletion	322AQ>322A	ENST00000372781	True	not_in_ClinVar		.	.	0	6.6e-06		2.42e-05	2.42e-05	outside benchmark	repeat	gatk
+SEMG1	chr20	45208280	A	T	0/1	12	46.64	missense	MODERATE	missense	328K>328I	ENST00000372781	True	not_in_ClinVar		.	.					0	outside benchmark	repeat	gatk
+SEMG1	chr20	45208281	A	C	0/1	12	46.64	missense	MODERATE	missense	328K>328N	ENST00000372781	True	not_in_ClinVar		.	.					0	outside benchmark	repeat	gatk
+SEMG1	chr20	45208285	A	G	0/1	13	43.64	missense	MODERATE	missense	330I>330V	ENST00000372781	True	Likely_benign	1	not_specified	3794203		6.62e-06		2.44e-05	2.44e-05	outside benchmark	repeat	gatk
+SEMG1	chr20	45208286	T	C	0/1	13	43.64	missense	MODERATE	missense	330I>330T	ENST00000372781	True	not_in_ClinVar		.	.					0	outside benchmark	repeat	gatk
+SEMG1	chr20	45208288	A	C	0/1	13	43.64	missense	MODERATE	missense	331T>331P	ENST00000372781	True	not_in_ClinVar		.	.					0	outside benchmark	repeat	gatk
+SEMG1	chr20	45208292	T	A	0/1	13	43.64	missense	MODERATE	missense	332I>332N	ENST00000372781	True	not_in_ClinVar		.	.	0	2.04e-05		3.99e-05	3.99e-05	outside benchmark	repeat	gatk
+SEMG1	chr20	45208356	G	A	0/1	23	180.64	synonymous	LOW	synonymous	353T	ENST00000372781	True	not_in_ClinVar		.	4450978	0.00341	0.0179	0.0218	0.0243	0.0243	outside benchmark	repeat	gatk
+SEMG1	chr20	45208503	T	C	0/1	45	616.64	synonymous	LOW	synonymous	402N	ENST00000372781	True	not_in_ClinVar		.	.					0	outside benchmark	no	gatk
+MATN4	chr20	45304381	G	T	0/1	34	341.64	missense	MODERATE	missense	164R>164S	ENST00000372756	True	Benign	2	not_provided	1338928	0.299	0.28	0.735	0.745	0.745	TP	no	gatk
+MATN4	chr20	45304523	T	C	0/1	32	491.64	synonymous	LOW	synonymous	116A	ENST00000372756	True	Benign	2	not_provided	1338927	0.302	0.286	0.735	0.745	0.745	TP	no	gatk
+SDC4	chr20	45348351	A	G	0/1	23	171.64	missense	MODERATE	missense	12F>12L	ENST00000372733	True	not_in_ClinVar		.	.	0.36	0.312	0.474	0.423	0.474	TP	no	gatk
+TP53TG5	chr20	45375515	CATT	C	1/1	24	1066.03	inframe_deletion	MODERATE	inframe_deletion	97NE>97E	ENST00000372726	True	not_in_ClinVar		.	.	0.606	0.5	0.65	0.637	0.65	TP	repeat	gatk
+DBNDD2	chr20	45409934	A	G	1/1	29	992.06	missense	MODERATE	splice_region		ENST00000372710	True	not_in_ClinVar		.	.	0.775	0.801	0.891	0.886	0.891	TP	no	gatk
+PIGT	chr20	45424352	G	A	0/1	41	509.64	synonymous	LOW	synonymous	457T	ENST00000279036	True	Benign	2	not_specified|Paroxysmal_nocturnal_hemoglobinuria_2|Multiple_congenital_anomalies-hypotonia-seizures_syndrome_3|not_provided	1169471	0.483	0.382	0.517	0.518	0.518	TP	no	gatk
+PIGT	chr20	45425709	T	C	1/1	23	958.06	synonymous	LOW	synonymous	540Y	ENST00000279036	True	Benign	2	not_provided|Paroxysmal_nocturnal_hemoglobinuria_2|Multiple_congenital_anomalies-hypotonia-seizures_syndrome_3|not_specified	506300	0.75	0.762	0.82	0.803	0.82	TP	no	gatk
+SPINT3	chr20	45512691	A	G	0/1	32	206.64	missense	MODERATE	missense	77L>77S	ENST00000217428	True	not_in_ClinVar		.	.	0.516	0.513	0.547	0.548	0.548	TP	no	gatk
+SPINT3	chr20	45512760	A	G	0/1	35	955.64	missense	MODERATE	missense	54F>54S	ENST00000217428	True	not_in_ClinVar		.	.	0.0148	0.0373	0.0988	0.0953	0.0988	TP	no	gatk
+SPINT3	chr20	45512771	C	T	0/1	34	988.64	synonymous	LOW	synonymous	50T	ENST00000217428	True	not_in_ClinVar		.	.					0	TP	no	gatk
+EPPIN	chr20	45545784	G	A	1/1	33	1215.06	synonymous	LOW	synonymous	10T	ENST00000336443	False	not_in_ClinVar		.	.					0	TP	no	gatk
+WFDC8	chr20	45551617	CAAA	C	1/1	12	500.02	splice_region	LOW	splice_region		ENST00000357199	False	not_in_ClinVar		.	.					0	outside benchmark	repeat	gatk
+WFDC8	chr20	45555736	T	C	0/1	42	610.64	missense	MODERATE	missense	137N>137S	ENST00000289953	True	not_in_ClinVar		.	.	0.4	0.383	0.432	0.428	0.432	TP	no	gatk
+WFDC10B	chr20	45685970	A	G	0/1	32	451.64	missense	MODERATE	missense	8L>8P	ENST00000330523	True	not_in_ClinVar		.	.	0.631	0.721	0.999	0.997	0.999	TP	repeat	gatk
+SPINT4	chr20	45722456	C	A	0/1	37	620.64	missense	MODERATE	missense	30A>30E	ENST00000279058	True	not_in_ClinVar		.	.	0.0442	0.0381	0.0862	0.0443	0.0862	TP	no	gatk
+SPINT4	chr20	45723981	G	A	0/1	32	498.64	missense	MODERATE	missense	73G>73S	ENST00000279058	True	not_in_ClinVar		.	.	0.389	0.464	0.686	0.673	0.686	TP	no	gatk
+WFDC3	chr20	45788954	C	A	0/1	31	565.64	missense	MODERATE	missense	63R>63L	ENST00000243938	True	not_in_ClinVar		.	.	0.0549	0.0442	0.0867	0.0553	0.0867	TP	no	gatk
+WFDC3	chr20	45789004	A	G	1/1	25	909.06	synonymous	LOW	synonymous	46G	ENST00000243938	True	not_in_ClinVar		.	.					0	TP	no	gatk
+WFDC3	chr20	45789036	G	C	1/1	29	1027.06	missense	MODERATE	missense	36H>36D	ENST00000243938	True	not_in_ClinVar		.	.	0.71	0.696	0.816	0.762	0.816	TP	no	gatk
+WFDC3	chr20	45789925	A	G	0/1	27	492.64	synonymous	LOW	synonymous	17S	ENST00000243938	True	not_in_ClinVar		.	.					0	TP	no	gatk
+DNTTIP1	chr20	45792043	T	C	1/1	36	1340.06	synonymous	LOW	synonymous	13P	ENST00000372622	True	not_in_ClinVar		.	.					0	TP	no	gatk
+TNNC2	chr20	45824058	C	A	0/1	36	497.64	synonymous	LOW	synonymous	128T	ENST00000372555	True	not_in_ClinVar		.	.					0	TP	no	gatk
+SNX21	chr20	45840651	G	A	0/1	26	441.64	missense	MODERATE	missense	154A>154T	ENST00000491381	True	not_in_ClinVar		.	.	0.524	0.419	0.554	0.551	0.554	TP	no	gatk
+SNX21	chr20	45842037	T	C	0/1	18	308.64	synonymous	LOW	3_prime_utr		ENST00000491381	True	not_in_ClinVar		.	.					0	TP	no	gatk
+ACOT8	chr20	45843524	C	T	0/1	33	415.64	splice_region	LOW	splice_region		ENST00000217455	True	not_in_ClinVar		.	4451125	0.391	0.307	0.433	0.432	0.433	TP	no	gatk
+ZSWIM3	chr20	45877334	T	C	1/1	25	915.06	missense	MODERATE	missense	259V>259A	ENST00000255152	True	not_in_ClinVar		.	.	0.62	0.577	0.684	0.659	0.684	TP	no	gatk
+ZSWIM3	chr20	45877779	G	A	1/1	30	1014.06	synonymous	LOW	synonymous	407R	ENST00000255152	True	not_in_ClinVar		.	.					0	TP	no	gatk
+ZSWIM1	chr20	45882894	G	A	0/1	42	522.64	missense	MODERATE	missense	101R>101Q	ENST00000372523	True	not_in_ClinVar		.	.	0.0204	0.0176	0.117	0.112	0.117	TP	no	gatk
+ZSWIM1	chr20	45882988	C	T	0/1	46	755.64	synonymous	LOW	synonymous	132F	ENST00000372523	True	not_in_ClinVar		.	.					0	TP	no	gatk
+CTSA	chr20	45891598	CCTG	C	1/1	16	706.03	inframe_deletion	MODERATE	inframe_deletion	10FL>10F	ENST00000646241	True	Benign	2	not_specified|not_provided|Combined_deficiency_of_sialidase_AND_beta_galactosidase	195059	0.607	0.655	0.666	0.706	0.706	TP	repeat	gatk
+CTSA	chr20	45894908	G	A	1/1	24	903.06	splice_region	LOW	splice_region		ENST00000646241	True	Benign	2	not_specified|Combined_deficiency_of_sialidase_AND_beta_galactosidase|not_provided	338535	0.646	0.656	0.773	0.722	0.773	TP	no	gatk
+CTSA	chr20	45895143	C	T	1/1	37	1356.06	missense	MODERATE	missense	363P>363L	ENST00000419493	False	Benign	2	not_provided|Combined_deficiency_of_sialidase_AND_beta_galactosidase|not_specified	338538	0.646	0.658	0.773	0.721	0.773	TP	no	gatk
+ZNF335	chr20	45967568	C	G	1/1	36	1194.06	missense	MODERATE	missense	294S>294T	ENST00000322927	True	Benign	2	not_specified|not_provided|Microcephalic_primordial_dwarfism_due_to_ZNF335_deficiency	130810	0.912	0.889	0.95	0.949	0.95	TP	repeat	gatk
+ZNF335	chr20	45967906	G	A	1/1	40	1252.06	synonymous	LOW	synonymous	214S	ENST00000322927	True	Benign	2	not_specified|not_provided|Microcephalic_primordial_dwarfism_due_to_ZNF335_deficiency	130807	0.4	0.316	0.443	0.432	0.443	TP	no	gatk
+MMP9	chr20	46012320	G	A	1/1	40	1191.06	splice_region	LOW	splice_region		ENST00000372330	True	Benign	2	not_provided|Metaphyseal_anadysplasia_2	338554	0.525	0.431	0.58	0.576	0.58	TP	no	gatk
+MMP9	chr20	46013767	G	C	1/1	30	1054.06	missense	MODERATE	missense	574R>574P	ENST00000372330	True	Benign	2	not_specified|not_provided|Metaphyseal_anadysplasia_2	282093	0.93	0.897	0.956	0.955	0.956	TP	no	gatk
+MMP9	chr20	46014194	A	C	1/1	19	701.06	synonymous	LOW	synonymous	607G	ENST00000372330	True	Benign	2	not_specified|not_provided|Metaphyseal_anadysplasia_2	285363	0.577	0.528	0.611	0.607	0.611	TP	no	gatk
+SLC12A5	chr20	46049709	G	A	1/1	37	1323.06	synonymous	LOW	synonymous	700A	ENST00000243964	True	Benign	2	Developmental_and_epileptic_encephalopathy,_34|not_specified|not_provided	1164899	0.999	0.986	1	1	1	TP	no	gatk
+NCOA5	chr20	46062711	T	G	0/1	27	147.64	synonymous	LOW	synonymous	443T	ENST00000290231	True	not_in_ClinVar		.	.					0	TP	no	gatk
+CDH22	chr20	46210564	C	G	0/1	31	458.64	splice_region	LOW	splice_region		ENST00000537909	True	not_in_ClinVar		.	.					0	TP	no	gatk
+SLC35C2	chr20	46354878	G	A	0/1	33	557.64	splice_region	LOW	splice_region		ENST00000372230	True	not_in_ClinVar		.	.					0	TP	no	gatk
+ELMO2	chr20	46367543	A	G	1/1	21	789.06	synonymous	LOW	synonymous	660D	ENST00000290246	True	Benign	2	Primary_intraosseous_venous_malformation|not_specified|not_provided	1236006	0.999	0.985	1	1	1	TP	no	gatk
+SLC13A3	chr20	46566265	C	G	0/1	28	493.64	synonymous	LOW	synonymous	486A	ENST00000279027	True	Benign	2	not_provided|SLC13A3-related_disorder	1168839	0.142	0.186	0.313	0.306	0.313	TP	no	gatk
+TP53RK	chr20	46687147	C	T	0/1	43	545.64	missense	MODERATE	missense	123R>123Q	ENST00000372114	True	Benign/Likely_benign	2	not_specified|not_provided	1245432	0.0412	0.0341	0.09	0.0571	0.09	TP	no	gatk
+EYA2	chr20	47089315	C	T	0/1	29	351.64	synonymous	LOW	synonymous	246D	ENST00000327619	True	not_in_ClinVar		.	.					0	TP	no	gatk
+NCOA3	chr20	47639206	C	T	1/1	40	1311.06	splice_region	LOW	splice_region		ENST00000371998	True	not_in_ClinVar		.	.					0	TP	no	gatk
+NCOA3	chr20	47651092	ACAG	A	0/1	23	508.6	inframe_deletion	MODERATE	inframe_deletion	1254QQ>1254Q	ENST00000371998	True	not_in_ClinVar		.	.	0.343	0.308	0.387	0.391	0.391	TP	repeat	gatk
+PREX1	chr20	48636612	T	C	1/1	29	984.06	missense	MODERATE	missense	1340K>1340E	ENST00000371941	True	not_in_ClinVar		.	.	0.971	0.978	1	1	1	TP	no	gatk
+PREX1	chr20	48639762	C	T	0/1	33	549.64	splice_region	LOW	splice_region		ENST00000371941	True	not_in_ClinVar		.	.					0	TP	no	gatk
+PREX1	chr20	48646011	C	T	0/1	42	542.64	missense	MODERATE	missense	1118A>1118T	ENST00000371941	True	Benign	2	not_provided	1344912	0.0721	0.142	0.341	0.337	0.341	TP	no	gatk
+PREX1	chr20	48691080	G	A	0/1	27	364.64	synonymous	LOW	synonymous	351N	ENST00000371941	True	not_in_ClinVar		.	.					0	TP	no	gatk
+STAU1	chr20	49158937	A	AC	0/1	25	287.6	splice_donor	HIGH	splice_donor		ENST00000456866	False	not_in_ClinVar		.	.	0.386	0.378	0.441	0.408	0.441	TP	no	gatk
+DDX27	chr20	49233645	C	T	1/1	32	1098.06	synonymous	LOW	synonymous	403F	ENST00000618172	True	not_in_ClinVar		.	.					0	TP	no	gatk
+DDX27	chr20	49242680	G	A	0/1	47	504.64	missense	MODERATE	splice_region		ENST00000618172	True	not_in_ClinVar		.	.	0.379	0.306	0.402	0.392	0.402	TP	no	gatk
+ZNFX1	chr20	49248835	G	A	1/1	21	757.06	synonymous	LOW	synonymous	1397L	ENST00000396105	True	Benign	1	not_specified	2687943	0.822	0.839	0.924	0.921	0.924	TP	no	gatk
+ZNFX1	chr20	49248972	G	A	1/1	28	925.06	missense	MODERATE	missense	1351T>1351I	ENST00000396105	True	Benign	1	not_specified	2687966	0.749	0.683	0.775	0.775	0.775	TP	no	gatk
+ZNFX1	chr20	49255840	C	G	1/1	44	1484.06	missense	MODERATE	missense	924Q>924H	ENST00000396105	True	Benign	1	not_specified	2687973	0.729	0.676	0.759	0.76	0.76	TP	no	gatk
+ZNFX1	chr20	49270147	G	A	1/1	35	1409.06	synonymous	LOW	synonymous	555Y	ENST00000396105	True	Benign	1	not_specified	2687945	0.822	0.839	0.925	0.923	0.925	TP	no	gatk
+KCNB1	chr20	49373087	G	A	0/1	27	421.64	missense	MODERATE	missense	825P>825S	ENST00000371741	True	Benign	2	Developmental_and_epileptic_encephalopathy,_26|not_provided|not_specified	382142	0.0227	0.0178	0.026	0.0291	0.0291	TP	no	gatk
+B4GALT5	chr20	49640612	C	T	1/1	37	1305.06	synonymous	LOW	synonymous	220E	ENST00000371711	True	not_in_ClinVar		.	.					0	TP	no	gatk
+B4GALT5	chr20	49642497	A	G	0/1	37	407.64	synonymous	LOW	synonymous	193L	ENST00000371711	True	not_in_ClinVar		.	.					0	TP	no	gatk
+SLC9A8	chr20	49874721	T	G	1/1	38	1252.06	synonymous	LOW	synonymous	325L	ENST00000361573	True	not_in_ClinVar		.	.					0	TP	no	gatk
+SPATA2	chr20	49905793	G	A	0/1	27	373.64	synonymous	LOW	synonymous	463C	ENST00000289431	True	not_in_ClinVar		.	.					0	TP	no	gatk
+SPATA2	chr20	49906048	G	A	0/1	27	336.64	synonymous	LOW	synonymous	378S	ENST00000289431	True	not_in_ClinVar		.	.					0	TP	no	gatk
+SPATA2	chr20	49906789	G	A	0/1	24	301.64	synonymous	LOW	synonymous	131I	ENST00000289431	True	not_in_ClinVar		.	.					0	TP	no	gatk
+SPATA2	chr20	49908290	A	G	0/1	30	307.64	synonymous	LOW	synonymous	67Y	ENST00000289431	True	not_in_ClinVar		.	.					0	TP	no	gatk

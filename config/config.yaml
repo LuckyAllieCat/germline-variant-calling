@@ -1,0 +1,84 @@
+# Main configuration. Every analysis parameter lives here.
+# Run with: snakemake --cores 8          (uses this file)
+# CI run:   snakemake --cores 2 --configfile config/ci.yaml
+
+sample: HG002
+
+# Analysis region (GRCh38, 1-based inclusive). A 10 Mb slice of chr20, the
+# chromosome used in most GIAB/GATK/DeepVariant tutorials. This window is
+# gene-dense and holds 35 genes with ClinVar P/LP variants (HNF4A, ADA, JPH2...).
+region:
+  chrom: chr20
+  start: 40000001
+  end: 50000000
+
+threads: 8
+scatter: 4            # region chunks for parallel calling
+
+# --- Remote data sources (only region slices are fetched where possible) ---
+urls:
+  # GIAB HG002 Illumina 2x250 PCR-free WGS, aligned to GRCh38 (novoalign)
+  bam: https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/AshkenazimTrio/HG002_NA24385_son/NIST_Illumina_2x250bps/novoalign_bams/HG002.GRCh38.2x250.bam
+  # GIAB v4.2.1 small-variant benchmark for HG002 on GRCh38
+  truth_vcf: https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/AshkenazimTrio/HG002_NA24385_son/NISTv4.2.1/GRCh38/HG002_GRCh38_1_22_v4.2.1_benchmark.vcf.gz
+  truth_bed: https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/AshkenazimTrio/HG002_NA24385_son/NISTv4.2.1/GRCh38/HG002_GRCh38_1_22_v4.2.1_benchmark_noinconsistent.bed
+  # GRCh38 chr20 (UCSC; identical sequence to the GRCh38 analysis set)
+  reference: https://hgdownload.soe.ucsc.edu/goldenPath/hg38/chromosomes/chr20.fa.gz
+  # Ensembl gene models for chr20 (used by bcftools csq)
+  gff3: https://ftp.ensembl.org/pub/release-113/gff3/homo_sapiens/Homo_sapiens.GRCh38.113.chromosome.20.gff3.gz
+  # Dated ClinVar release (falls back to the archive folder once it moves)
+  clinvar: https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/clinvar_20261025.vcf.gz
+  clinvar_archive: https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/archive_2.0/2026/clinvar_20261025.vcf.gz
+  # gnomAD v4.1 sites; queried remotely only at candidate positions
+  gnomad_exomes: https://gnomad-public-us-east-1.s3.amazonaws.com/release/4.1/vcf/exomes/gnomad.exomes.v4.1.sites.chr20.vcf.bgz
+  gnomad_genomes: https://gnomad-public-us-east-1.s3.amazonaws.com/release/4.1/vcf/genomes/gnomad.genomes.v4.1.sites.chr20.vcf.bgz
+  # GIAB v3.3 genome stratifications (used to explain caller errors)
+  strat_repeats: https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/genome-stratifications/v3.3/GRCh38@all/LowComplexity/GRCh38_AllTandemRepeatsandHomopolymers_slop5.bed.gz
+  strat_lowmap: https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/genome-stratifications/v3.3/GRCh38@all/Mappability/GRCh38_lowmappabilityall.bed.gz
+
+# Downsample the extracted reads (the GIAB 2x250 BAM is ~57x here; 0.5 gives
+# ~29x, close to typical clinical WGS depth). 1.0 keeps everything.
+downsample_fraction: 0.5
+
+# --- Read QC (fastp) ---
+fastp:
+  extra: "--detect_adapter_for_pe --cut_tail --cut_mean_quality 15 --length_required 50"
+
+# --- Variant calling ---
+bcftools_call:
+  min_mapq: 20
+  min_baseq: 20
+  max_depth: 500
+
+# GATK hard filters (GATK "germline short variant" recommendations)
+gatk_filters:
+  snp:
+    QD2: "QD < 2.0"
+    QUAL30: "QUAL < 30.0"
+    SOR3: "SOR > 3.0"
+    FS60: "FS > 60.0"
+    MQ40: "MQ < 40.0"
+    MQRankSum-12.5: "MQRankSum < -12.5"
+    ReadPosRankSum-8: "ReadPosRankSum < -8.0"
+  indel:
+    QD2: "QD < 2.0"
+    QUAL30: "QUAL < 30.0"
+    FS200: "FS > 200.0"
+    SOR10: "SOR > 10.0"
+    ReadPosRankSum-20: "ReadPosRankSum < -20.0"
+
+# bcftools call filters; the upper depth limit is a multiple of the mean depth
+bcftools_filters:
+  min_qual: 20
+  min_depth: 8
+  max_depth_factor: 2.5
+  snp_gap: 3            # drop SNVs within 3 bp of an indel (common bcftools artefact)
+
+# --- Annotation and prioritization ---
+# Which call set to annotate: "auto" (higher mean of SNV and indel F1), "gatk" or "bcftools"
+annotate_caller: auto
+prioritization:
+  max_af: 0.01          # "rare": max gnomAD AF (exomes/genomes, overall and grpmax)
+  impacts: [HIGH, MODERATE]
+  clinvar_keep: [Pathogenic, Likely_pathogenic, Pathogenic/Likely_pathogenic,
+                 Uncertain_significance, Conflicting_classifications_of_pathogenicity]
